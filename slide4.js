@@ -2,7 +2,7 @@ import {line, miniTooltip} from 'britecharts';
 import BaseSlide from './base_slide';
 
 // source: competition tribunal
-const clicksSales = {data: [
+const competitionTribunal = {data: [
     {topicName: 'Clicks mask sales', name: 1, date: '2019-11-01', value: 0.834},
     {topicName: 'Clicks mask sales', name: 1, date: '2019-12-01', value: 0.834},
     {topicName: 'Clicks mask sales', name: 1, date: '2020-01-01', value: 0.9556},
@@ -58,7 +58,7 @@ export default class Slide4 extends BaseSlide {
             .on('customMouseMove', tooltip.update)
             .on('customMouseOut', tooltip.hide);
 
-        container.datum(clicksSales).call(lineChart);
+        container.datum(competitionTribunal).call(lineChart);
         let tooltipContainer = container.select('.line-chart .metadata-group');
         tooltipContainer.datum([]).call(tooltip);
 
