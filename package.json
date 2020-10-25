@@ -10,7 +10,7 @@
   },
   "scripts": {
     "dev": "parcel serve index.html",
-    "build": "parcel build index.html --out-dir dist/ --no-content-hash"
+    "build": "parcel build index.html --no-content-hash"
   },
   "dependencies": {
     "britecharts": "^2.17.1",
